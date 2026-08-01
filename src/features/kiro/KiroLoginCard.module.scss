@@ -1,0 +1,121 @@
+@use '../../styles/mixins' as *;
+
+.cardTitle {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+}
+
+.cardTitleIcon {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+}
+
+.hint {
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.methodRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-sm;
+  align-items: flex-end;
+}
+
+.methodField {
+  min-width: 220px;
+  flex: 1 1 220px;
+}
+
+.fieldLabel {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.deviceBox {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+  padding: $spacing-md;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--bg-secondary);
+}
+
+.deviceLabel {
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.deviceValue {
+  word-break: break-all;
+  color: var(--text-primary);
+  font-family: monospace;
+  font-size: 13px;
+}
+
+.userCode {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--text-primary);
+  font-family: monospace;
+}
+
+.deviceActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-sm;
+}
+
+.importArea {
+  width: 100%;
+  min-height: 140px;
+  padding: $spacing-sm;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: monospace;
+  font-size: 12px;
+  resize: vertical;
+}
+
+.importActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-sm;
+  align-items: center;
+}
+
+.resultList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.resultItem {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-sm;
+  font-size: 13px;
+  color: var(--text-primary);
+}
+
+.resultKey {
+  color: var(--text-secondary);
+}
